@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+ }
+ html{
+ 	min-height: 100%;
+ }
+@font-face{
+	font-family: '14008';
+	src: url(../fonts/14008.otf);
+	}
+
+body{
+	background: url(../img/background.png) center/cover no-repeat    ;
+	font-family: '14008';
+   }
+/* логотип*/
+.mercury-logo{
+  display: flex;
+	cursor: pointer;
+	margin:0 auto;
+}
+/* главный блок*/
+.login-menu{
+	display: flex;
+	flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+	margin:0 auto;
+  text-align: center;
+}
+/* заголовок 'log in' */
+.login-menu__title{
+	text-align: center;
+	color: #262626;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+/* поле для имейла */
+input.login-menu__name {
+    display: block;
+    margin: 0 auto;
+    border:none;
+    color: #262626;
+    padding-left: 16px;
+    mix-blend-mode: normal; 
+    background: #F1F1F1;
+    border-radius: 4px;
+}
+/* поле для пароля */
+input.login-menu__password {
+    display: block;
+    background: #F1F1F1;
+    border-radius: 4px;
+    margin: 0 auto;
+    border:none; 
+    color: #262626;
+    mix-blend-mode: normal;
+}
+/* ошибка входа */
+p.error {
+	  display: none;
+    background: rgba(237, 65, 89, 0.25);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED4159;
+    margin-top: 32px;
+}
+/* кнопка для логина */
+.login-menu__button{
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+	color: white;
+	background:#ED4159;
+	border:none;
+	box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+	border-radius: 100px;
+	height: 48px;
+	width: 146px;
+	margin:0 auto;
+	margin-top: 48px; 
+	margin-bottom: 60px;
+}
+
+.login-menu__button:hover{
+	background: #FFFFFF;
+	box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+	color: #ED4159;
+	 }
+
+.login-menu__button:active{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
+	 }
+/* меню профиля пользователя*/
+ .accaount-menu{
+ 	  display: none;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+ }
+/* кнопка для выхода из профиля*/
+.user__logout{
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+	color: white;
+	background:#ED4159;
+	border:none;
+	box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+	border-radius: 100px;
+	height: 48px;
+	width: 146px;
+	margin:0 auto;
+}
+@media screen and (min-width: 768px) {
+
+.mercury-logo{
+ margin-top: 144px;
+}
+
+.login-menu{
+		width:600px;
+		min-height: 409px;
+	  margin-top:138px;
+	  margin-bottom: 336px;
+}
+
+.login-menu__title{
+		margin-bottom: 48px;
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 900;
+		letter-spacing: 0.2px;
+		padding-top: 48px;
+}
+
+ input.login-menu__name {
+   font-size: 16px;
+   line-height: 19px;
+   padding-left: 16px;
+   width: 504px;
+   height: 48px;
+   margin-bottom: 20px;
+}
+ input.login-menu__password {
+   padding-left: 16px;
+   border-radius: 4px;
+   width: 504px;
+   height: 48px;
+   font-size: 16px;
+   line-height: 19px;
+  
+}
+
+/*ошибка*/
+p.error {
+    width: 487px;
+    padding: 11px 16px 9px;
+    text-align: start;
+}
+
+/*user profile*/
+.accaount-menu {
+    width: 600px;
+    min-height: 409px;
+    margin-top: 138px;
+    margin-bottom: 336px;
+}
+/* аватарка */
+.user__photo{
+margin-top: 48px;
+margin-bottom: 40px;
+cursor: pointer;
+}
+/*имя пользователя */
+.user__name{
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	letter-spacing: 0.233333px;
+	color: #262626;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+	margin-bottom: 56px;
+}
+
+.user__logout:hover{
+	background: #FFFFFF;
+	box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+	color: #ED4159;
+	 }
+
+.user__logout:active{
+background: #FFFFFF;
+box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
+ }
+}
+@media screen and (max-width: 767px) {
+.mercury-logo{
+	width: 182px;
+	height:40px;
+	margin-bottom: 48px;
+	margin-top: 43px;
+}
+
+.login-menu{
+	    width: 288px;
+    min-height: 344px;
+    margin: 0 auto;
+}
+
+.login-menu__title{
+	font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  padding-top: 32px;
+}
+
+input.login-menu__name , input.login-menu__password {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 16px;
+    width: 240px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+    mix-blend-mode: normal;
+}
+
+	 input.login-menu__name{
+	  margin-bottom: 24px;
+	}
+
+ .user__logout{
+ 	margin-bottom: 48px;
+ }
+
+	.accaount-menu{
+		width: 288px;
+		min-height:299px;
+	  margin-top: 0;
+	}
+	.user__photo{
+		margin-top: 32px;
+		margin-bottom: 24px;
+	}
+	.user__name{
+		margin-bottom: 39px;
+	}
+	p.error{
+		width: 236px;
+		padding: 12px 6px 8px 14px;
+		font-size: 12px;
+    line-height: 14px;
+	}
+}
