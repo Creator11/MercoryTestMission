@@ -1,29 +1,41 @@
 
-
 var form = document.forms.login;
 var formContainer = document.querySelector('.login-menu')
-var containUser = document.querySelector('.accaount-menu');
+var containerUser = document.querySelector('.accaount-menu');
 
 // логин юзера
 var loginUser = function () {
  	formContainer.style.display = 'none';
-  containUser.style.display = 'block';
+  containerUser.style.display = 'block';
 	 (form.elements.email).style.border = "none";
-	 (form.elements.email).style.color = "red";
+	 (form.elements.email).style.color = "#262626";
    (form.elements.password).style.border = "none";
 }
 
 //что делать  если ошибка 
-var loggedIncorrect = function () {
+var errorLogin = function () {
 	(document.querySelector('.error')).style.display = 'block';
 	(form.elements.email).style.border = "1px solid red";
-		(form.elements.email).style.color = "#262626";
+		(form.elements.email).style.color = "red";
 	(form.elements.password).style.border = "1px solid red";
 }
-//отрпавка формы
-form.addEventListener ('submit', function(e){
+//осушеставляем выход из профиля с помошью кнопки logout
+var unlogin = function(){
+var logout = containerUser.querySelector('input');
 
-e.preventDefault()
+	logout.addEventListener('click', function () {
+		(document.querySelector('.error')).style.display = 'none';
+		formContainer.style.display = 'block';
+		containerUser.style.display = 'none';
+	});
+};
+
+unlogin();
+
+//отрпавка формы
+form.addEventListener ('submit', function(a){
+a.preventDefault()
+
 //передаю значение из полей в json и отправляю на сервер
 var user = {
    	email: form.email.value,
@@ -43,20 +55,8 @@ request.send(json);
 	request.onreadystatechange = function () {
     	if (request.readyState == 4 && request.status == 200)
         	loginUser();
-        else if (containUser.style.display != 'block') {
-        	loggedIncorrect();
+        else if (containerUser.style.display = 'none') {
+        	errorLogin();
     	}
 	}
 });
-//осушеставляем выход из профиля с помошью кнопки logout
-var unlog = function(){
-	var logout = containUser.querySelector('input');
-
-	logout.addEventListener('click', function () {
-		(document.querySelector('.error')).style.display = 'none';
-		formContainer.style.display = 'block';
-		containUser.style.display = 'none';
-	});
-};
-unlog();
-
