@@ -268,7 +268,6 @@ body {
     padding-top: 32px;
   }
 
-  .form__name,
   .form__password {
     padding-left: 16px;
     width: 240px;
@@ -279,6 +278,11 @@ body {
 
   .form__name {
     margin-bottom: 24px;
+    padding-left: 16px;
+    width: 240px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .user__logout {
@@ -336,7 +340,11 @@ body {
     margin: 0 12px;
   }
 
-  .form__name,
+  .form__name {
+    width: 100%;
+    padding-left: 6px;
+  }
+
   .form__password {
     width: 100%;
     padding-left: 6px;

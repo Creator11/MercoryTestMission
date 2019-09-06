@@ -30,7 +30,7 @@ form.addEventListener('submit', function (a) {
     password: form.password.value
   };
 
-
+  // post запрос с fetch
   var url = 'https://us-central1-mercdev-academy.cloudfunctions.net/login';
 
   fetch(url, {
