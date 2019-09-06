@@ -1,6 +1,6 @@
-var unlogin = function(){
+var unlogin = function () {
 	var containerUser = document.querySelector('.accaount-menu');
-var logout = containerUser.querySelector('input');
+	var logout = containerUser.querySelector('input');
 
 
 	logout.addEventListener('click', function () {

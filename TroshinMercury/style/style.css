@@ -1,133 +1,145 @@
-*{
-	margin: 0;
-	padding: 0;
- }
- html{
- 	min-height: 100%;
- }
-@font-face{
-	font-family: '14008';
-	src: url(../fonts/14008.otf);
-	}
-
-body{
-	background: url(../img/background.png) center/cover no-repeat    ;
-	font-family: '14008';
-   }
-/* логотип*/
-.mercury-logo{
-  display: flex;
-	cursor: pointer;
-	margin:0 auto;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: '14008';
+  src: url(../fonts/14008.otf);
+}
+
+body {
+  background: url(../img/background.png) center/cover no-repeat;
+  font-family: '14008';
+}
+
+/* логотип*/
+.mercury-logo {
+  display: flex;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
 /* главный блок*/
-.login-menu{
-	display: flex;
-	flex-direction: column;
+.login-menu {
+  display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-	margin:0 auto;
+  margin: 0 auto;
   text-align: center;
 }
+
 /* заголовок 'log in' */
-.form__title{
-	text-align: center;
-	color: #262626;
-	mix-blend-mode: normal;
-	opacity: 0.8;
+.form__title {
+  text-align: center;
+  color: #262626;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
+
 /* поле для имейла */
 .form__name {
-    display: block;
-    margin: 0 auto;
-    border:none;
-    color: #262626;
-    padding-left: 16px;
-    mix-blend-mode: normal; 
-    background: #F1F1F1;
-    border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  color: #262626;
+  padding-left: 16px;
+  mix-blend-mode: normal;
+  background: #F1F1F1;
+  border-radius: 4px;
 }
+
 /* поле для пароля */
 .form__password {
-    display: block;
-    background: #F1F1F1;
-    border-radius: 4px;
-    margin: 0 auto;
-    border:none; 
-    color: #262626;
-    mix-blend-mode: normal;
+  display: block;
+  background: #F1F1F1;
+  border-radius: 4px;
+  margin: 0 auto;
+  border: none;
+  color: #262626;
+  mix-blend-mode: normal;
 }
+
 /* ошибка входа */
 .form__error {
-	display: none;
-    background: rgba(237, 65, 89, 0.25);
-    border-radius: 4px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ED4159;
-    margin-top: 32px;
+  display: none;
+  background: rgba(237, 65, 89, 0.25);
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ED4159;
+  margin-top: 32px;
 }
+
 /* кнопка для логина */
-.form__button{
-	font-size: 14px;
-	line-height: 17px;
-	cursor: pointer;
-	color: white;
-	background:#ED4159;
-	border:none;
-	box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
-	border-radius: 100px;
-	height: 48px;
-	width: 146px;
-	margin:0 auto;
-	margin-top: 48px; 
-	margin-bottom: 60px;
+.form__button {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  color: white;
+  background: #ED4159;
+  border: none;
+  box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+  border-radius: 100px;
+  height: 48px;
+  width: 146px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 60px;
 }
 
-.form__button:hover{
-	background: #FFFFFF;
-	box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
-	color: #ED4159;
-	 }
+.form__button:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+  color: #ED4159;
+}
 
-.form__button:active{
-	background: #FFFFFF;
-	box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
-	 }
+.form__button:active {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
+}
+
 /* меню профиля пользователя*/
- .accaount-menu{
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    margin: 0 auto;
-    text-align: center;
- }
-/* кнопка для выхода из профиля*/
-.user__logout{
-	font-size: 14px;
-	line-height: 17px;
-	cursor: pointer;
-	color: white;
-	background:#ED4159;
-	border:none;
-	box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
-	border-radius: 100px;
-	height: 48px;
-	width: 146px;
-	margin:0 auto;
+.accaount-menu {
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+/* кнопка для выхода из профиля*/
+.user__logout {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  color: white;
+  background: #ED4159;
+  border: none;
+  box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+  border-radius: 100px;
+  height: 48px;
+  width: 146px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
 
-.mercury-logo{
- margin-top: 144px;
-}
+  .mercury-logo {
+    margin-top: 144px;
+  }
 
-.login-menu{
-		max-width: 600px;
+  .login-menu {
+    max-width: 600px;
     margin-top: 138px;
     margin-bottom: 336px;
     display: flex;
@@ -139,38 +151,39 @@ body{
     border-radius: 8px;
     text-align: center;
     right: 10%;
-}
+  }
 
-.form__title{
-		margin-bottom: 48px;
-		font-size: 24px;
-		line-height: 29px;
-		font-weight: 900;
-		letter-spacing: 0.2px;
-		padding-top: 48px;
-}
+  .form__title {
+    margin-bottom: 48px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    padding-top: 48px;
+  }
 
-.form__name {
-   font-size: 16px;
-   line-height: 19px;
-   width: 504px;
-   height: 48px;
-   margin-bottom: 20px;
-}
-.form__password {
-   padding-left: 16px;
-   border-radius: 4px;
-   width: 504px;
-   height: 48px;
-   font-size: 16px;
-   line-height: 19px;
-  
-}
+  .form__name {
+    font-size: 16px;
+    line-height: 19px;
+    width: 504px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
 
-/*ошибка*/
-.form__error  {
-	display: none;
-	  width: 487px;
+  .form__password {
+    padding-left: 16px;
+    border-radius: 4px;
+    width: 504px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+
+  }
+
+  /*ошибка*/
+  .form__error {
+    display: none;
+    width: 487px;
     padding: 11px 16px 9px;
     text-align: start;
     font-size: 14px;
@@ -179,10 +192,10 @@ body{
     margin-top: 32px;
     background: rgba(237, 65, 89, 0.25);
     border-radius: 4px;
-}
+  }
 
-/*user profile*/
-.accaount-menu {
+  /*user profile*/
+  .accaount-menu {
     flex-direction: column;
     background: #FFFFFF;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
@@ -193,46 +206,49 @@ body{
     min-height: 409px;
     margin-top: 138px;
     margin-bottom: 336px;
-}
-/* аватарка */
-.user__photo{
-margin-top: 48px;
-margin-bottom: 40px;
-cursor: pointer;
-}
-/*имя пользователя */
-.user__name{
-	font-size: 28px;
-	line-height: 34px;
-	text-align: center;
-	letter-spacing: 0.233333px;
-	color: #262626;
-	mix-blend-mode: normal;
-	opacity: 0.8;
-	margin-bottom: 56px;
+  }
+
+  /* аватарка */
+  .user__photo {
+    margin-top: 48px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+
+  /*имя пользователя */
+  .user__name {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.233333px;
+    color: #262626;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 56px;
+  }
+
+  .user__logout:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+    color: #ED4159;
+  }
+
+  .user__logout:active {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
+  }
 }
 
-.user__logout:hover{
-	background: #FFFFFF;
-	box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
-	color: #ED4159;
-	 }
-
-.user__logout:active{
-background: #FFFFFF;
-box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
- }
-}
 @media screen and (max-width: 767px) {
-.mercury-logo{
-	width: 182px;
-	height:40px;
-	margin-bottom: 48px;
-	margin-top: 43px;
-}
+  .mercury-logo {
+    width: 182px;
+    height: 40px;
+    margin-bottom: 48px;
+    margin-top: 43px;
+  }
 
-.login-menu{
-	max-width: 288px;
+  .login-menu {
+    max-width: 288px;
     padding: 0 24px;
     display: flex;
     flex-direction: column;
@@ -243,32 +259,33 @@ box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
     position: absolute;
     left: 10%;
     right: 10%;
-}
+  }
 
-.form__title{
-	font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 32px;
-  padding-top: 32px;
-}
+  .form__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+  }
 
-.form__name , .form__password {
+  .form__name,
+  .form__password {
     padding-left: 16px;
     width: 240px;
     height: 48px;
     font-size: 16px;
     line-height: 19px;
-}
+  }
 
-	 .form__name{
-	  margin-bottom: 24px;
-	}
+  .form__name {
+    margin-bottom: 24px;
+  }
 
- .user__logout{
- 	margin-bottom: 48px;
- }
+  .user__logout {
+    margin-bottom: 48px;
+  }
 
-	.accaount-menu{
+  .accaount-menu {
     flex-direction: column;
     background: #FFFFFF;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
@@ -276,80 +293,87 @@ box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5)
     margin: 0 auto;
     position: relative;
     text-align: center;
-	  max-width: 288px;
-	}
-	.user__photo{
-		margin-top: 32px;
-		margin-bottom: 24px;
-	}
-	.user__name{
-	margin-bottom: 39px;
-	font-size: 28px;
-	line-height: 34px;
-	text-align: center;
-	letter-spacing: 0.233333px;
-	color: #262626;
-	mix-blend-mode: normal;
-	opacity: 0.8;
-	}
-	.form__error{
-		display: none;
-		width: 236px;
-		padding: 12px 6px 8px 14px;
-		font-size: 12px;
+    max-width: 288px;
+  }
+
+  .user__photo {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .user__name {
+    margin-bottom: 39px;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.233333px;
+    color: #262626;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .form__error {
+    display: none;
+    width: 236px;
+    padding: 12px 6px 8px 14px;
+    font-size: 12px;
     line-height: 14px;
     text-align: start;
     color: #ED4159;
     background: rgba(237, 65, 89, 0.25);
     border-radius: 4px;
-	}
+  }
 }
 
 @media screen and (max-width: 340px) {
-.login-menu{
-	display: flex;
-	flex-direction: column;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  text-align: center;
+  .login-menu {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: center;
     margin: 0 12px;
-}
-.form__name, .form__password {
+  }
+
+  .form__name,
+  .form__password {
     width: 100%;
     padding-left: 6px;
-}
-.form__error{
-	display: none;
+  }
+
+  .form__error {
+    display: none;
     width: 100%;
     padding: 6px 6px 6px 6px;
-		font-size: 12px;
+    font-size: 12px;
     line-height: 14px;
     text-align: start;
     color: #ED4159;
     background: rgba(237, 65, 89, 0.25);
     border-radius: 4px;
-    }
+  }
 
-    .accaount-menu {
+  .accaount-menu {
     margin: 0 12px;
     flex-direction: column;
     background: #FFFFFF;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     text-align: center;
-}
+  }
 }
 
 /*js add style*/
 
-.js-hidden{
-	visibility: hidden;
+.js-hidden {
+  visibility: hidden;
 }
 
-.js-error{
-	border: 1px solid red;
+.js-error {
+  border: 1px solid red;
 }
-.js-error__text{
-		color: red;
+
+.js-error__text {
+  color: red;
 }
