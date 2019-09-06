@@ -8,13 +8,13 @@ html {
 }
 
 @font-face {
-  font-family: '14008';
-  src: url(../fonts/14008.otf);
+  font-family: 'Gotham';
+  src: url(../fonts/GothamPro-Black.woff);
 }
 
 body {
   background: url(../img/background.png) center/cover no-repeat;
-  font-family: '14008';
+  font-family: 'Gotham';
 }
 
 /* логотип*/
